@@ -1,17 +1,26 @@
 html {
-  background-color: #C633F4;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-color: #FFFFFF;
+  
 }
 
-.header {
-  display: block;
+body {
+  height: 500px;
+  width: 700px;
+}
+
+body #root .signPage {
+  
   text-align: center;
+  margin:auto;
 }
 
-.header .nickName {
+body #root .signPage input.nickName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  margin-left: 150px;
   margin: 20px;
   padding: 5px 15px;
   border-radius: 17px;
@@ -19,18 +28,20 @@ html {
   outline: none;
 }
 
-.buttonStyle {
+body #root .signPage .buttonStyle {
   display: block;
-  padding: 7px 20px;
-  border-radius: 25px;
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  margin: auto;
+  color: #FFFFFF;
   border-style: none;
-  text-decoration: none;
-  color: #FFF;
-  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
-  transition: .5s;
-  margin: 10px;
+
+  background: linear-gradient(264.28deg, #7D34F8 0%, rgba(243, 44, 225, 0.8) 100%);
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
 }
 
-.buttonStyle:hover {
-  background-image: linear-gradient(45deg, #FFCC00 0%, #f76a35 100%);
+body #root .signPage .buttonStyle:hover {
+  background: linear-gradient(264.28deg, #F32CE1 0%, rgba(125, 52, 248, 1) 100%);
 }
